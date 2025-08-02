@@ -1,5 +1,5 @@
 pool:
-  name: 'dev-pool'
+  name: 'riyazpool2'
 
 stages:
 - stage: Deploy
@@ -11,7 +11,7 @@ stages:
       inputs:
         connectionType: 'Kubernetes Service Connection'
         kubernetesServiceEndpoint: 'k8sconnection'
-        azureResourceGroup: 'dev-env'
+        azureResourceGroup: 'devops-env'
         kubernetesCluster: 'dev-cluster'
         namespace: 'three-tier'
         command: 'apply'
